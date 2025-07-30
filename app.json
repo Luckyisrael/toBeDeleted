@@ -52,7 +52,7 @@
     "ios": {
       "supportsTablet": true,
       "config": {
-        "googleMapsApiKey": "AIzaSyDN6s9y6WezcKzlz6cPp1hu8SlJ1AcYScs"
+        "googleMapsApiKey": ""
       },
       "bundleIdentifier": "com.luckyisrael.sweeftly",
       "infoPlist": {
@@ -74,7 +74,7 @@
       },
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyDN6s9y6WezcKzlz6cPp1hu8SlJ1AcYScs"
+          "apiKey": ""
         }
       },
       "versionCode": 1 ,
