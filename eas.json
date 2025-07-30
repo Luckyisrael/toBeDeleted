@@ -1,0 +1,40 @@
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_STRIPE_PUBLISHABLE_TEST_KEY": "EXPO_PUBLIC_STRIPE_PUBLISHABLE_TEST_KEY",
+        "EXPO_PUBLIC_DEVELOPMENT_BASE_URL": "EXPO_PUBLIC_PRODUCTION_BASE_URL",
+        "EXPO_PUBLIC_MERCHANT_ID": "EXPO_PUBLIC_MERCHANT_ID"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "preview4": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_STRIPE_PUBLISHABLE_LIVE_KEY": "EXPO_PUBLIC_STRIPE_PUBLISHABLE_LIVE_KEY",
+        "EXPO_PUBLIC_PRODUCTION_BASE_URL": "EXPO_PUBLIC_PRODUCTION_BASE_URL",
+        "EXPO_PUBLIC_MERCHANT_ID": "EXPO_PUBLIC_MERCHANT_ID"
+      }
+    }
+  },
+  "cli": {
+    "appVersionSource": "remote"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "expo": {
+    "name": "sweeftly",
+    "slug": "sweeftly",
+    "scheme": "sweeftly",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      [
+        "expo-dev-launcher",
+        {
+          "launchMode": "most-recent"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.sweeftly",
+          "enableGooglePay": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#25396F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyDN6s9y6WezcKzlz6cPp1hu8SlJ1AcYScs"
+      },
+      "bundleIdentifier": "com.luckyisrael.sweeftly",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleAllowMixedLocalizations": true,
+        "CFBundleLocalizations": [
+          "en",
+          "en"
+        ],
+        "NSCameraUsageDescription": "This app does not use the camera, but a required dependency may request access.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Your location is used to find nearby stores for convenient ordering and delivery. For example, we'll show stores closest to you when browsing or placing an order.",
+        "NSLocationWhenInUseUsageDescription": "Your location is used to show nearby shops and improve delivery accuracy. For example, we'll suggest stores in your area and match your entered address for delivery."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDN6s9y6WezcKzlz6cPp1hu8SlJ1AcYScs"
+        }
+      },
+      "versionCode": 1 ,
+      "package": "com.luckyisrael.sweeftly",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "891eaef2-a358-4951-9493-f692f0a27b39"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/891eaef2-a358-4951-9493-f692f0a27b39"
+    }
+  }
+}
